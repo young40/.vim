@@ -68,4 +68,4 @@ let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=0
 let NERDTreeShowLineNumbers=1
 nnoremap f :NERDTreeToggle<CR><CR>
-
+autocmd vimenter * if !argc() | NERDTree | endif "quit vim if only NerdTree is opened"
