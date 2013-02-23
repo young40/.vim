@@ -69,3 +69,12 @@ let NERDTreeShowHidden=0
 let NERDTreeShowLineNumbers=1
 nnoremap f :NERDTreeToggle<CR><CR>
 autocmd vimenter * if !argc() | NERDTree | endif "quit vim if only NerdTree is opened"
+
+" Popup color. effect neocomplcache
+hi Pmenu ctermbg=8
+hi PmenuSel ctermbg=1
+hi PmenuSbar ctermbg=0
+
+" neocomplcache {{{
+let g:neocomplcache_enable_at_startup = 1
+" }}}
