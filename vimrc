@@ -58,7 +58,8 @@ map <C-s> :w<CR><CR> " 保存快捷键
 " autoload _vimrc .vimrc 内容改变后自动加载
 autocmd! bufwritepost ~/.vimrc source % 
 
-autocmd vimenter * NERDTree "自动打开文件树
+" autocmd vimenter * NERDTree "自动打开文件树
+" autoquit vim when only NERDTree left 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let NERDChristmasTree=1
 let NERDTreeAutoCenter=1
@@ -68,7 +69,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=0
 let NERDTreeShowLineNumbers=1
 nnoremap f :NERDTreeToggle<CR><CR>
-autocmd vimenter * if !argc() | NERDTree | endif "quit vim if only NerdTree is opened"
+autocmd vimenter * if !argc() | NERDTree | endif " smart open NerdTree when vim start
 
 " Popup color. effect neocomplcache
 hi Pmenu ctermbg=8
