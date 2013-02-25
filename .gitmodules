@@ -16,3 +16,9 @@
 [submodule "bundle/vim-octopress"]
 	path = bundle/vim-octopress
 	url = git@github.com:tangledhelix/vim-octopress.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git@github.com:majutsushi/tagbar.git
+[submodule "tags"]
+	path = tags
+	url = git@github.com:andyque/Cocos2DTags.git
