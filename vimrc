@@ -1,4 +1,3 @@
-syntax on " 自动语法高亮
 "set transparency=20 " 设置背景透明度
 set nocompatible " 关闭vi兼容模式
 set confirm " 处理未保存或只读文件弹出确认
@@ -22,10 +21,19 @@ set incsearch " 马上显示搜索结果
 set langmenu=zh_CN.UTF-8 " 语言设置 mac下似乎无效
 set helplang=cn
 
+set enc=utf-8
+set tenc=utf-8
+set fenc=utf-8
+set fencs=utf-8,usc-bom
+
 set laststatus=2 " 总是显示状态行
 
 execute pathogen#infect()  
 " 使用pathgen管理插件
+"
+syntax enable
+set background=dark
+colorscheme solarized
 
 filetype on "侦测文件类型
 filetype plugin on "载入文件类型插件
