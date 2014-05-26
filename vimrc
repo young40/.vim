@@ -95,6 +95,8 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
 
+Plugin 'AutoClose'
+
 Plugin 'sickill/vim-monokai'
 Plugin 'tomasr/molokai'
 
