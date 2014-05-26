@@ -96,6 +96,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'sickill/vim-monokai'
+Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -115,7 +116,7 @@ filetype plugin indent on    " required
 
 syntax enable
 set background=dark
-colorscheme monokai
+colorscheme molokai
 
 set cursorline "高亮当前行
 
