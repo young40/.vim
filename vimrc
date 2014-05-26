@@ -97,6 +97,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AutoClose'
 
+Plugin 'fencview.vim'
+
 Plugin 'sickill/vim-monokai'
 Plugin 'tomasr/molokai'
 
