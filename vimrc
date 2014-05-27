@@ -97,6 +97,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'AutoClose'
 
+Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'bling/vim-airline'
+
 Plugin 'fencview.vim'
 
 Plugin 'sickill/vim-monokai'
