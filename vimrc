@@ -29,7 +29,13 @@ set laststatus=2 " 总是显示状态行
 
 set report=0 " 可以使用:commands 命令查看被改动的行, mac下似乎无效
 
-set autochdir " 自动切换当前目录为当前文件所在的目录
+" 当时vimdiff时 不自动切换目录"
+if &diff
+    set noautochdir
+else
+    set autochdir " 自动切换当前目录为当前文件所在的目录
+endif
+
 
 " 打开多个文件时使用ctrl+tab切换
 nmap <s-T> :bn<CR><CR>
